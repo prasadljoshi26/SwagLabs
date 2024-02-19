@@ -12,6 +12,7 @@ ${username}  standard_user
 ${password}  secret_sauce
 
 *** Test Cases ***
+
 Verify product is removed from cart
     Open Browser  ${siteurl}  ${browser}
     Enter Username   ${username}

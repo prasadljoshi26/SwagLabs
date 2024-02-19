@@ -15,8 +15,6 @@ ${password}  secret_sauce
 
 *** Test Cases ***
 
-*** Test Cases ***
-
 Verify that on click on "Chekout" button, user is navigating to the "Your information" page
     Open Browser  ${siteurl}  ${browser}
     Enter Username   ${username}

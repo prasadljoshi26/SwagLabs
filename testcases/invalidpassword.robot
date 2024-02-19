@@ -10,6 +10,7 @@ ${username}  standard_user
 ${password}  secret_sauceb
 
 *** Test Cases ***
+
 Verify with valid username & invalid password
     Open Browser  ${siteurl}  ${browser}
     Enter Username  ${username}

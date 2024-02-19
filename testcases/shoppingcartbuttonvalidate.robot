@@ -12,6 +12,7 @@ ${username}  standard_user
 ${password}  secret_sauce
 
 *** Test Cases ***
+
 Verify that shopping cart page
     Open Browser  ${siteurl}  ${browser}
     Enter Username   ${username}

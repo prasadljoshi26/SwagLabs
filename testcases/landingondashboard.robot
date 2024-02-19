@@ -10,6 +10,7 @@ ${username}  standard_user
 ${password}  secret_sauce
 
 *** Test Cases ***
+
 Verify that after successful login, page is navigting to correct homepage/dashboard
     Open Browser  ${siteurl}  ${browser}
     Enter Username  ${username}
