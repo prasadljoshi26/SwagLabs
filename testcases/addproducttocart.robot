@@ -11,7 +11,7 @@ ${username}  standard_user
 ${password}  secret_sauce
 
 *** Test Cases ***
-TC_13 Verify product added to cart
+Verify product added to cart
     Open Browser  ${siteurl}  ${browser}
     Enter Username   ${username}
     Enter Password   ${password}

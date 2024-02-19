@@ -12,7 +12,7 @@ ${username}  standard_user
 ${password}  secret_sauce
 
 *** Test Cases ***
-TC_16 Verify product is removed from cart
+Verify product is removed from cart
     Open Browser  ${siteurl}  ${browser}
     Enter Username   ${username}
     Enter Password   ${password}

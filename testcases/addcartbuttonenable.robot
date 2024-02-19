@@ -11,7 +11,7 @@ ${username}  standard_user
 ${password}  secret_sauce
 
 *** Test Cases ***
-TC_10 Verify add product button is enable
+Verify add product button is enable
     Open Browser  ${siteurl}  ${browser}
     Enter Username   ${username}
     Enter Password   ${password}
