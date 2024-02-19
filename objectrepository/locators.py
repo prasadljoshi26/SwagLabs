@@ -1,4 +1,4 @@
-#locators for the login page of saucedemo
+#locating for the login page username, password & login button of saucedemo
 from selenium.webdriver.common.by import By
 
 textfieldusername="id:user-name"
