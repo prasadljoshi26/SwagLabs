@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.1 on win32)" generated="2024-02-19T17:31:42.377602" rpa="false" schemaversion="5">
+<suite id="s1" name="Shoppingcartbuttonvalidate" source="F:\Prasad_Pyhton_Class\SwagLabs\testcases\shoppingcartbuttonvalidate.robot">
+<test id="s1-t1" name="Verify that shopping cart page" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:31:42.721356" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-02-19T17:31:43.158845" level="WARN">The geckodriver version (0.31.0) detected in PATH at C:\Users\user\Python\geckodriver.exe might not be compatible with the detected firefox version (115.7.0.8780); currently, geckodriver 0.34.0 is recommended for firefox 115.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-19T17:31:42.721356" elapsed="19.485643"/>
+</kw>
+<kw name="Enter Username" owner="loginkeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:02.206999" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>${textfieldusername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T17:32:02.206999" elapsed="0.765634"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-02-19T17:32:02.206999" elapsed="0.765634"/>
+</kw>
+<kw name="Enter Password" owner="loginkeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:02.972633" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>${textfieldpassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T17:32:02.972633" elapsed="0.109419"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-19T17:32:02.972633" elapsed="0.109419"/>
+</kw>
+<kw name="Login button enable" owner="loginkeywords">
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${loginbutton}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.082052" elapsed="0.281239"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.082052" elapsed="0.281239"/>
+</kw>
+<kw name="Click on Login" owner="loginkeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:03.363291" level="INFO">Clicking button 'xpath://*[@id='login-button']'.</msg>
+<arg>${loginbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.363291" elapsed="0.296849"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.363291" elapsed="0.296849"/>
+</kw>
+<kw name="Add cart button is visible" owner="addcartkeywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:03.675766" level="INFO">Element 'xpath://*[@id='add-to-cart-sauce-labs-backpack']' is displayed.</msg>
+<arg>${addcartbutton_backpack}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.660140" elapsed="0.015626"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.660140" elapsed="0.015626"/>
+</kw>
+<kw name="Add cart button enable" owner="addcartkeywords">
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${addcartbutton_backpack}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.675766" elapsed="0.031250"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.675766" elapsed="0.031250"/>
+</kw>
+<kw name="Click on add cart button" owner="addcartkeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:03.707016" level="INFO">Clicking button 'xpath://*[@id='add-to-cart-sauce-labs-backpack']'.</msg>
+<arg>${addcartbutton_backpack}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.707016" elapsed="0.250004"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.707016" elapsed="0.250004"/>
+</kw>
+<kw name="Verify that shopping cart icon button is visible on the page" owner="shoppingcartpagekeywords">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:03.972651" level="INFO">Element 'xpath://a[@class='shopping_cart_link']' is displayed.</msg>
+<arg>${shoppingcart}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.957020" elapsed="0.015631"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.957020" elapsed="0.031249"/>
+</kw>
+<kw name="Verify that shopping cart icon button is enable" owner="shoppingcartpagekeywords">
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${shoppingcart}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-02-19T17:32:03.988269" elapsed="0.015625"/>
+</kw>
+<status status="PASS" start="2024-02-19T17:32:03.988269" elapsed="0.015625"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-19T17:32:14.016078" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-19T17:32:04.003894" elapsed="10.012184"/>
+</kw>
+<kw name="Verify that on the click of shopping cart icon button , user is navigating to the cart section" owner="shoppingcartpagekeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-19T17:32:14.016078" level="INFO">Clicking button 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2024-02-19T17:32:14.602735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-19T17:32:14.602735" level="FAIL">Button with locator 'xpath://a[@class='shopping_cart_link']' not found.</msg>
+<arg>${shoppingcart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-02-19T17:32:14.016078" elapsed="3.124049">Button with locator 'xpath://a[@class='shopping_cart_link']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-02-19T17:32:14.016078" elapsed="3.124049">Button with locator 'xpath://a[@class='shopping_cart_link']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-02-19T17:31:42.721356" elapsed="34.418771">Button with locator 'xpath://a[@class='shopping_cart_link']' not found.</status>
+</test>
+<status status="FAIL" start="2024-02-19T17:31:42.377602" elapsed="34.762525"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Shoppingcartbuttonvalidate">Shoppingcartbuttonvalidate</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-19T17:31:43.158845" level="WARN">The geckodriver version (0.31.0) detected in PATH at C:\Users\user\Python\geckodriver.exe might not be compatible with the detected firefox version (115.7.0.8780); currently, geckodriver 0.34.0 is recommended for firefox 115.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
